@@ -6,10 +6,7 @@
 
 <title>Rani Gerges Portfolio</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 
@@ -20,108 +17,75 @@
 }
 
 body{
-    font-family:'Inter',sans-serif;
-    background:#0f0f0f;
-    color:white;
-    overflow-x:hidden;
-}
-
-.hero{
-    height:100vh;
+    font-family:'Inter', sans-serif;
+    background:#111;
     display:flex;
-    flex-direction:column;
     justify-content:center;
     align-items:center;
-    text-align:center;
-    padding:20px;
-    position:relative;
+    height:100vh;
 }
 
-.hero::before{
-    content:"";
-    position:absolute;
-    width:500px;
-    height:500px;
-    background:rgba(255,255,255,0.05);
-    border-radius:50%;
-    filter:blur(120px);
-    top:10%;
-    left:50%;
-    transform:translateX(-50%);
+/* LEFT + RIGHT GREY BARS */
+.side{
+    position:fixed;
+    top:0;
+    width:80px;
+    height:100vh;
+    background:#2b2b2b;
 }
 
-h1{
-    font-size:clamp(3rem,10vw,7rem);
-    font-weight:700;
-    letter-spacing:-4px;
-    z-index:2;
-}
+.side.left{ left:0; }
+.side.right{ right:0; }
 
-.subtitle{
-    margin-top:20px;
-    font-size:1.2rem;
-    color:#bdbdbd;
-    max-width:700px;
-    line-height:1.8;
-    z-index:2;
-}
-
-.tags{
-    margin-top:40px;
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:15px;
-    z-index:2;
-}
-
-.tag{
-    border:1px solid rgba(255,255,255,0.15);
-    padding:12px 22px;
-    border-radius:100px;
-    backdrop-filter:blur(10px);
-    background:rgba(255,255,255,0.03);
-    transition:0.3s;
-}
-
-.tag:hover{
-    background:white;
-    color:black;
-    cursor:pointer;
-}
-
-.button{
-    margin-top:50px;
-    padding:16px 32px;
-    background:white;
-    color:black;
-    text-decoration:none;
-    border-radius:100px;
-    font-weight:600;
-    transition:0.3s;
-    z-index:2;
-}
-
-.button:hover{
-    transform:translateY(-3px);
-}
-
-.socials{
-    position:absolute;
-    bottom:40px;
-    display:flex;
-    gap:20px;
-    z-index:2;
-}
-
-.socials a{
-    color:#999;
-    text-decoration:none;
-    transition:0.3s;
-}
-
-.socials a:hover{
+/* MAIN CARD */
+.card{
+    background:black;
     color:white;
+    width:900px;
+    max-width:90%;
+    padding:80px 60px;
+    text-align:center;
+}
+
+/* NAME */
+h1{
+    font-size:52px;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+/* DEGREE */
+h2{
+    font-size:22px;
+    font-weight:500;
+    margin-bottom:40px;
+    color:#ddd;
+}
+
+/* ROLE LINE */
+.roles{
+    font-size:18px;
+    font-weight:500;
+    margin-bottom:10px;
+}
+
+/* SERVICES LINE */
+.services{
+    font-size:14px;
+    color:#bbb;
+    letter-spacing:0.5px;
+}
+
+/* CONTACT */
+.contact{
+    margin-top:60px;
+    font-size:16px;
+    line-height:1.8;
+    color:#fff;
+}
+
+.contact span{
+    display:block;
 }
 
 </style>
@@ -129,35 +93,29 @@ h1{
 
 <body>
 
-<section class="hero">
+<div class="side left"></div>
+<div class="side right"></div>
+
+<div class="card">
 
     <h1>Rani Gerges</h1>
 
-    <p class="subtitle">
-        Architecture, urban planning, graphic design,
-        project management, and visual storytelling.
-        Exploring how space, identity, and design shape cities and people.
-    </p>
+    <h2>M. Sc. Architecture</h2>
 
-    <div class="tags">
-        <div class="tag">Architecture</div>
-        <div class="tag">Urban Planning</div>
-        <div class="tag">Graphic Design</div>
-        <div class="tag">Project Management</div>
-        <div class="tag">Event Planning</div>
+    <div class="roles">
+        Designer • Urban Researcher • Project Manager
     </div>
 
-    <a href="#portfolio" class="button">
-        View Portfolio
-    </a>
-
-    <div class="socials">
-        <a href="#">Instagram</a>
-        <a href="#">LinkedIn</a>
-        <a href="#">Email</a>
+    <div class="services">
+        Architecture | Urban Planning | Graphic Design | Event Planning
     </div>
 
-</section>
+    <div class="contact">
+        <span>+49 151 53277995</span>
+        <span>gergesrani@gmail.com</span>
+    </div>
+
+</div>
 
 </body>
 </html>
