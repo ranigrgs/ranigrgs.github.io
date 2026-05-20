@@ -3,46 +3,143 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rani Gerges</title>
+  <title>Rani Gerges Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
 
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-  />
+    body {
+      background: #000;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1100px;
+      padding: 40px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .left {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .name {
+      font-size: 42px;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+
+    .skills {
+      font-size: 18px;
+      line-height: 1.6;
+      opacity: 0.9;
+    }
+
+    .right {
+      text-align: right;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .roles {
+      font-size: 18px;
+      line-height: 1.8;
+    }
+
+    .icons {
+      margin-top: 30px;
+      display: flex;
+      gap: 20px;
+      justify-content: flex-end;
+    }
+
+    .icon {
+      width: 26px;
+      height: 26px;
+      fill: white;
+      cursor: pointer;
+      opacity: 0.85;
+    }
+
+    .icon:hover {
+      opacity: 1;
+    }
+
+    /* MOBILE */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        padding: 40px 25px;
+        align-items: center;
+        text-align: center;
+      }
+
+      .right {
+        text-align: center;
+        align-items: center;
+        margin-top: 40px;
+      }
+
+      .icons {
+        justify-content: center;
+      }
+    }
+  </style>
 </head>
-
 <body>
+
   <div class="container">
 
-    <!-- LEFT TOP NAME -->
-    <div class="name">
-      RANI GERGES
+    <div class="left">
+      <div class="name">RANI GERGES</div>
+      <div class="skills">
+        Architecture<br/>
+        Urban Planning<br/>
+        Graphic Design<br/>
+        Event Planning
+      </div>
     </div>
 
-    <!-- RIGHT ROLES -->
-    <div class="roles">
-      <p>Designer</p>
-      <p>Urban Researcher</p>
-      <p>Project Manager</p>
-    </div>
+    <div class="right">
+      <div class="roles">
+        Designer<br/>
+        Urban Researcher<br/>
+        Project Manager
+      </div>
 
-    <!-- LEFT SKILLS -->
-    <div class="skills">
-      <p>Architecture</p>
-      <p>Urban Planning</p>
-      <p>Graphic Design</p>
-      <p>Event Planning</p>
-    </div>
+      <div class="icons">
+        <!-- Email -->
+        <svg class="icon" viewBox="0 0 24 24">
+          <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+        </svg>
 
-    <!-- BOTTOM RIGHT SOCIALS -->
-    <div class="socials">
-      <a href="mailto:youremail@example.com"><i class="fa-solid fa-envelope"></i></a>
-      <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-      <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <!-- Instagram -->
+        <svg class="icon" viewBox="0 0 24 24">
+          <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2a1 1 0 110 2 1 1 0 010-2zM12 7a5 5 0 110 10 5 5 0 010-10z"/>
+        </svg>
+
+        <!-- LinkedIn -->
+        <svg class="icon" viewBox="0 0 24 24">
+          <path d="M4 3C2.9 3 2 3.9 2 5s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 4v14h4V7H4zm6 0v14h4v-7c0-1.7 3-2 3 0v7h4v-8c0-5-6-4.8-7-2V7h-4z"/>
+        </svg>
+      </div>
     </div>
 
   </div>
+
 </body>
 </html>
