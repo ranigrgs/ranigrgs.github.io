@@ -1,205 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rani Gerges</title>
 
-<title>Rani Gerges Portfolio</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-<style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family:'Inter', sans-serif;
-    background:#000;
-    color:#fff;
-}
-
-/* HERO */
-.hero{
-    min-height:100vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    padding:60px 20px;
-}
-
-/* NAME */
-h1{
-    font-size:clamp(2.5rem,6vw,4.5rem);
-    font-weight:700;
-    letter-spacing:-2px;
-}
-
-/* DEGREE */
-h2{
-    font-size:clamp(1.1rem,2vw,1.4rem);
-    font-weight:400;
-    margin-top:10px;
-    color:#d0d0d0;
-}
-
-/* ROLES */
-.roles{
-    margin-top:30px;
-    font-size:clamp(0.95rem,2vw,1.1rem);
-    color:#fff;
-    opacity:0.9;
-}
-
-/* SERVICES */
-.services{
-    margin-top:10px;
-    font-size:clamp(0.85rem,2vw,1rem);
-    color:#aaa;
-}
-
-/* CONTACT */
-.contact{
-    margin-top:40px;
-    font-size:0.95rem;
-    line-height:1.8;
-    color:#fff;
-}
-
-/* SCROLL INDICATOR */
-.scroll{
-    margin-top:60px;
-    font-size:0.8rem;
-    color:#666;
-    letter-spacing:2px;
-}
-
-/* SECTIONS */
-.section{
-    min-height:80vh;
-    padding:100px 20px;
-    max-width:900px;
-    margin:0 auto;
-}
-
-.section h3{
-    font-size:1.8rem;
-    margin-bottom:30px;
-    letter-spacing:-1px;
-}
-
-.project{
-    margin-bottom:40px;
-    padding-bottom:20px;
-    border-bottom:1px solid #222;
-}
-
-.project h4{
-    font-size:1.2rem;
-    margin-bottom:10px;
-}
-
-.project p{
-    color:#aaa;
-    font-size:0.95rem;
-    line-height:1.6;
-}
-
-/* MOBILE FIXES */
-@media (max-width:600px){
-
-    .section{
-        padding:70px 20px;
-    }
-
-    .roles, .services{
-        text-align:center;
-    }
-}
-
-</style>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
 </head>
 
 <body>
+  <div class="container">
 
-<!-- HERO -->
-<section class="hero">
+    <!-- LEFT TOP NAME -->
+    <div class="name">
+      RANI GERGES
+    </div>
 
-    <h1>Rani Gerges</h1>
-
-    <h2>M. Sc. Architecture</h2>
-
+    <!-- RIGHT ROLES -->
     <div class="roles">
-        Designer • Urban Researcher • Project Manager
+      <p>Designer</p>
+      <p>Urban Researcher</p>
+      <p>Project Manager</p>
     </div>
 
-    <div class="services">
-        Architecture | Urban Planning | Graphic Design | Event Planning
+    <!-- LEFT SKILLS -->
+    <div class="skills">
+      <p>Architecture</p>
+      <p>Urban Planning</p>
+      <p>Graphic Design</p>
+      <p>Event Planning</p>
     </div>
 
-    <div class="contact">
-        +49 151 53277995<br>
-        gergesrani@gmail.com
+    <!-- BOTTOM RIGHT SOCIALS -->
+    <div class="socials">
+      <a href="mailto:youremail@example.com"><i class="fa-solid fa-envelope"></i></a>
+      <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
     </div>
 
-    <div class="scroll">
-        SCROLL
-    </div>
-
-</section>
-
-<!-- ABOUT -->
-<section class="section">
-
-    <h3>About</h3>
-
-    <p style="color:#aaa; line-height:1.7;">
-        I work across architecture, urban planning, and visual design,
-        focusing on how spatial environments influence social interaction,
-        identity, and collective memory.
-    </p>
-
-</section>
-
-<!-- PROJECTS -->
-<section class="section">
-
-    <h3>Projects</h3>
-
-    <div class="project">
-        <h4>Urban Fragmentation Study</h4>
-        <p>Analysis of divided urban spaces and their social impact.</p>
-    </div>
-
-    <div class="project">
-        <h4>Architecture & Memory</h4>
-        <p>Exploring spatial narratives in post-conflict environments.</p>
-    </div>
-
-    <div class="project">
-        <h4>Visual Mapping System</h4>
-        <p>Graphic representation of urban relationships and borders.</p>
-    </div>
-
-</section>
-
-<!-- CONTACT -->
-<section class="section">
-
-    <h3>Contact</h3>
-
-    <p style="color:#aaa; line-height:1.8;">
-        Email: gergesrani@gmail.com<br>
-        Phone: +49 151 53277995<br>
-        Based in Europe
-    </p>
-
-</section>
-
+  </div>
 </body>
 </html>
